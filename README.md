@@ -29,20 +29,31 @@ Let's say Families 1 and 2 live on the same street. 192.168.1. Connor Street. Th
 
 Since these are different streets (networks), they can't talk to each other without a method of travel, which is routing!!
 
+### Ninja RMM
+
+Ninja is the primary tool/dashboard for IT Analysts, essentially a catch-all dashboard for viewing client & organization devices and resolving Support Tickets submitted by both fellow LC members & clients in need.
+
+Splashtop is a way to remote into devices/environments. This is useful because it’s a way to get into a device without being at the location. You would also have access to multiple devices making it more efficient and faster.
+
+Example:
+If someone submitted a support ticket asking for a password reset, how would you resolve that ticket? You must provide them with the password, but would you make any parameters such as an expiration after the first use?
+
+Answer: I would first respond by giving a randomly generated password to their account and then checking the required ‘change upon signing in’ setting that is usually provided.
+
 ### Leahy Center Infrastructure
 
 ![big-image](https://github.com/user-attachments/assets/291da51e-124f-4dfc-b564-155ee1bb396d)
 
 Summary:
 
-AD-01 & AD-02: Active Directory / Main servers. Your accounts are synced up to these, and password resets, account lockouts, so many things come from these.
+AD-01 & AD-02: Active Directory / Main servers. Your accounts are synced up to these, and password resets, account lockouts, and so many things come from these.
 
 DHCP-01 & DHCP-02: Assigns computers DHCP IP addresses based on a standard that we set. MAC Address filtering is also running on these.
 
 Neptune: An SQL database server for many apps in our network.
 
 Poseidon: A web server for multiple websites we host internally (such as the LC Homepage). These cannot be accessed from outside of the Leahy Center's network without a VPN.
-Mediawiki: This will be where all of LC's documentation is hosted and also accessed. If you are unsure of something, it is most likely on Mediawiki. You have permission to add pages, but check to make sure if what you are about to add is already there or not.
+Mediawiki: This will be where all of LC's documentation is hosted and also accessed. If you are unsure of something, it is most likely on Mediawiki. You have permission to add pages, but check to make sure that what you are about to add is already there or not.
 
 TPM: This is our password manager, it has 2FA (two-factor authentication). If you need a device's credentials or need to remotely log into a VM, it's most likely on there
 
