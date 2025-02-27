@@ -1,17 +1,25 @@
 # ITAdmin
+
+## Lab Notes 
+
+### Lab #1
+
+#### Summary 
+In this lab, we created three different VMs(Rocky Linux, Windows Server, and Workstation). To start making each VM we must go to vSphere 
+
 ## Internship notes
 
 ### VMs
 
 A VM (Virtual Machine) is a fully fledged "virtual computer" that your computer runs inside of itself. It feeds off the host computer resources in return acting as a fully usable computer (without any physical parts).
 
-IT team members should be at the very least familiar with the operating systems that the Leahy Center commonly uses. Google is your friend here, and feel free to ask me or your coworkers for assistance.
+IT team members should be at the very least familiar with the operating systems that the Leahy Center commonly uses. Google is your friend here, and you can just ask me or your coworkers for help.
 
 The OS's you should know are
 
 
 Windows 10, Windows 11 (Used by the majority of businesses today)
-MacOS (Common among artists & creative majors, & it is always great be familiar with MacOS) It is much harder to virtualize MacOS on systems other than MacOS since it is a very closed source, but it is possible.
+MacOS (Common among artists & creative majors, & it is always great to be familiar with MacOS) It is much harder to virtualize MacOS on systems other than MacOS since it is a very closed source, but it is possible.
 
 Linux (Very important! Linux is used for critical services for many organizations! It runs websites, keeps systems secure, and does many many things!)
 
