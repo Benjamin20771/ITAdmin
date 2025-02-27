@@ -12,22 +12,60 @@ To start making each VM we must go to vSphere and on the second tab near the top
 We then click next while selecting the first selection. We then name our VMs as IT-(term/year)-(last name)-(whatever Vm is being created). We then click on the only available compute resource and continue. Then click on a storage option and leave the compatibility alone. Label the Guest OS as what you want to create and then customize the hardware as needed. Below is a summary of problems/solutions for each lab.
 
 ### Windows Server
-Problems/Solutions: 
+#### Problems/Solutions: 
 
 B.D.: There were no problems in my personal experience with this VM setup though I will say the Static IP setup is very important for the later labs.
 
 ### Windows Workstation/10 pro
-Problems/Solutions:
+#### Problems/Solutions:
 
 B.D.: One problem I ran into was the connection between this VM and the Windows Server VM which was that the DNS is the IP of the Windows server for the other VMs. This will then allow them to connect.
 
 ### Rocky Linux
-Problems/Solutions:
+#### Problems/Solutions:
 
-B.D.: 
+B.D.: No problems other than the past problem on the Windows workstation to connect the VMs.
 
-Commands:
+#### Commands:
 
+sudo dnf install realmd oddjob oddjob-mkhomedir sssd adcli krb5-workstation = installation of Realmd
+
+Realm discover = This will discover a realm you want to connect to
+
+sudo realm join -U = This is the start of the command to join a realm. To finish it add the domain username and the domain itself. Ex. sudo realm join -U bob.ross-adm bross.local
+
+nmtui = This command will bring you to Network Manager TUI which is where you can edit your connection
+
+### End of Lab
+
+## Lab #2
+
+### Summary
+In this lab, we use one of our Windows VMs to test out and use PowerShell. 
+
+We create an alias and a PowerShell profile 
+
+#### Problems/Solutions:
+
+B.D.: No problems. Very straightforward 
+
+#### Commands:
+
+(In Command Prompt)- powershell = This will take you to powershell
+
+Get-ChildItem = Gets the items and child items in one or more specified locations
+
+ipconfig =  displays network configuration details
+
+Set-Alias = This can change the name of a certain command to something else for convenience or whatever is more understanding. Ex. Set-Alias -name ifconfig -value ipconfig (This then changes ipconfig to ifconfig)
+
+$profile = This will find your profile location
+
+Workstation only!- Get-ExecutionPolicy = will return true or false. If false use “Set-ExecutionPolicy RemoteSigned” which will then make it true. 
+
+ise $profile = This will take you to a different area which is the Windows Powershell ISE
+
+### End of Lab
 
 ## Internship notes
 
