@@ -5,7 +5,10 @@
 ### Lab #1
 
 #### Summary 
-In this lab, we created three different VMs(Rocky Linux, Windows Server, and Workstation). To start making each VM we must go to vSphere 
+In this lab, we created three different VMs(Rocky Linux, Windows Server, and Workstation). To start making each VM we must go to vSphere and on the second tab near the top left we go down to a file named term/year-lastname-IT-ADM-VMs (filled in with your information) where we can right-click on it and click on the New VM. We then click next while selecting the first selection. We then name our VMs as IT-(term/year)-(last name)-(whatever Vm is being created). We then click on the only available compute resource and continue. Then click on a storage option and leave the compatibility alone. Label the Guest OS as what you want to create and then customize the hardware as needed. Below is a summary of each lab and problems/solutions.
+
+#### Linux
+
 
 ## Internship notes
 
