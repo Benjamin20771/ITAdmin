@@ -67,6 +67,15 @@ ise $profile = This will take you to a different area which is the Windows Power
 
 ### End of Lab
 
+## Lab #3
+
+### End of Lab
+
+## Lab #4
+
+### Summary
+This lab was a DNS challenge where we had to 
+
 ## Internship notes
 
 ### VMs
