@@ -51,7 +51,7 @@ B.D.: No problems. Very straightforward
 
 #### Commands:
 
-(In Command Prompt)- powershell = This will take you to powershell
+(In Command Prompt)- PowerShell = This will take you to PowerShell
 
 Get-ChildItem = Gets the items and child items in one or more specified locations
 
@@ -74,7 +74,21 @@ ise $profile = This will take you to a different area which is the Windows Power
 ## Lab #4
 
 ### Summary
-This lab was a DNS challenge where we had to 
+This lab was a DNS challenge where we had to add our VMs to our server VM DNS section. We go to tools/DNS/Forward and Reverse Lookup Zones to do this. 
+
+Right-click on the last file of each and add a host or pointer depending on which one you're doing. input the information of each VM.
+
+Then nslookup back and forth between each one to confirm it worked
+
+#### Problems/Solutions:
+
+B.D. No problems
+
+#### Commands:
+
+nslookup = this is used to look up a VM after adding it to the DNS area
+
+### End of Lab
 
 ## Internship notes
 
