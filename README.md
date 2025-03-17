@@ -11,6 +11,8 @@ To start making each VM we must go to vSphere and on the second tab near the top
 
 We then click next while selecting the first selection. We then name our VMs as IT-(term/year)-(last name)-(whatever Vm is being created). We then click on the only available compute resource and continue. Then click on a storage option and leave the compatibility alone. Label the Guest OS as what you want to create and then customize the hardware as needed. Below is a summary of problems/solutions for each lab.
 
+Note: Most Leahy Center Gateways end in 250
+
 ### Windows Server
 #### Problems/Solutions: 
 
@@ -68,6 +70,33 @@ ise $profile = This will take you to a different area which is the Windows Power
 ### End of Lab
 
 ## Lab #3
+
+### Summary
+In this lab, we use our server and Linux VMs to obtain and set a certificate.
+
+Important details in this lab were IPs and navigating between VMs.
+
+#### Problems/Solutions
+
+B.D.: Firstly my httpd would not work which resulted in a reinstall of the system. Secondly, my network connection wasn't working so I changed it to 250 at the end of the gateway. Then my key wouldn't move over so I had to add the path. Lastly, my httpd wouldn't start so I had to disable the firewall.
+
+#### Commands
+
+sudo dnf install "____" -y = This one will install anything to your vm like httpd
+
+sudo firewall-cmd --add-port "__"/tcp = This is to open a specific port
+
+sudo firewall-cmd --reload = Restarts the firewall after editing it
+
+cat = opens a file
+
+sudo mv = is the beginning of moving a file somewhere
+
+ssh = This can be used on one command prompt while linked to a VM
+
+sudo setenforce 0 = shuts off SELinux which blocks some files
+
+sudo journalctl = Can check the activity of something
 
 ### End of Lab
 
