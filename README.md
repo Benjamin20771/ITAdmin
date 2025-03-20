@@ -119,6 +119,20 @@ nslookup = this is used to look up a VM after adding it to the DNS area
 
 ### End of Lab
 
+## Shadowing 
+
+### Name:
+
+#### Notes 
+
+### Name:
+
+#### Notes 
+
+## Ninja Tickets
+
+
+
 ## Internship notes
 
 ### VMs
